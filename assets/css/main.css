@@ -3977,6 +3977,26 @@ input, select, textarea {
 		font-size: 0.6em;
 	}
 	.prename .postname{
-		font-size: 0.6em;
+		font-size: 0.6em; 
 	}
+}
+
+/* Projects */
+.subject-select{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 0.75em;
+}
+
+.subject-select > label{
+	width: 10em;
+	margin: 10px 5px 5px;
+}
+
+.project-toggle{
+	align-self: center;
+}
+section.hide {
+	display: none;
 }
