@@ -57,7 +57,7 @@
 			<option value="C++" data-show=".cpp">C++</option>
 			<option value="DB" data-show=".db">Databases</option>
 			<option value="DSA" data-show=".dsa">Data Structures and Algorithms</option>
-			<option value="Electronics" data-show=".electronics">Electronics / FPGA</option>
+			<option value="Electronics" data-show=".electronics">Electronics / FPGAs</option>
 			<option value="HTML" data-show=".html">HTML / CSS</option>
 			<option value="Java" data-show=".java">Java</option>
 			<option value="Prototyping" data-show=".proto">Prototyping</option>
@@ -66,6 +66,82 @@
 		</select>
 	</div>
 	<section id="one" class="wrapper style2 spotlights">
+		<!--
+		<section class="showall hide">
+			<div class="content">
+				<div class="inner">
+					<h2></h2>
+					<p></p>
+					<ul class="actions">
+						<li><a href="" class="button"><i class = "icon brands fab fa-github"></i> See the Code</a></li>
+
+						<li><a href="" class="button"><i class = "icon solid fas fa-file-pdf"></i> See the Project</a></li>
+
+						<li><a href="" class="button"><i class = "icon solid fas fa-server"></i> See it Live</a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		-->
+		<section class="showall hide java sdlc db">
+			<div class="content">
+				<div class="inner">
+					<h2>EBS - Event Booking System</h2>
+					<p>This was a group project to design and create a large application. I decided to come up with my own idea rather than use a given one (health monitor, car rental app, etc) and the group decided to go with it. The program allows an events management company to keep track of events they have planned as well as add and remove events, locations and customers from the system. The system also automatically emails customers when a user books a ticket on their account. Full details of the system and a walkthrough of what it looks like can be found on the Wiki for the project, linked below.</p>
+					<ul class="actions">
+						<li><a href="https://github.com/TJEEPOT/Event-Booking-System" class="button"><i class = "icon brands fab fa-github"></i> See the Code</a></li>
+						<li><a href="/projects/event-booking-system/Event_Booking_System_Stage_1.pdf" class="button"><i class = "icon solid fas fa-file-pdf"></i> Stage 1 Project Report</a></li>
+						<li><a href="/projects/event-booking-system/Event_Booking_System_Stage_2.pdf" class="button"><i class = "icon solid fas fa-file-pdf"></i> Stage 2 Project report</a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="showall hide cpp">
+			<div class="content">
+				<div class="inner">
+					<h2>C++ Offline Movie Database</h2>
+					<p>This was a solo project to port my OMDB code from my 2018 project to C++. This project taught me the differences in OOP between Java and C++. As I hadn't used C++ in a couple years it was useful to have a refresher on the basis, as well as learn new techniques such as Header files, operator overloading, inline statements and the C++11 feature, shared_ptr.</p>
+					<ul class="actions">
+						<li><a href="https://github.com/TJEEPOT/CPP-OMDB" class="button"><i class = "icon brands fab fa-github"></i> See the Code</a></li>
+				</div>
+			</div>
+		</section>
+		<section class="showall hide dsa java">
+			<div class="content">
+				<div class="inner">
+					<h2>Word Auto Completion with Tries</h2>
+					<p>This project was designed to test my abilities with Data Structures, in particular with Tries. The program takes a given excerpt of text and a set of queries (part-completed words). A dictionary of words and their frequencies are taken from the text excerpt and loaded into a trie. For each entry in the queries list, it scans the trie and saves to a text file the top three most likely words that query could result in, along with their probabilities.
+					This program could easily be modified to work in real-time where the excerpt of text is a sample of the user's previous words typed and the queries can be what the user is currently typing, thereby working as a real-time auto-complete feature.</p>
+					<ul class="actions">
+						<li><a href="https://github.com/TJEEPOT/Word-Auto-Completion" class="button"><i class = "icon brands fab fa-github"></i> See the Code</a></li>
+						<li><a href="https://tjeepot.github.io/projects/Data_Structures_and_Algorithms_2.pdf" class="button"><i class = "icon solid fas fa-file-pdf"></i> See the Project</a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="showall hide java">
+			<div class="content">
+				<div class="inner">
+					<h2>Java Card Game</h2>
+					<p>This was a solo project to implement a version of the card game 'Cheat'. The project was in two parts - the first was to write the classes to handle a card, hand and deck and the second was to write classes that defined how different strategies (computer player difficulties) would be played, as well as ensure the game worked correctly. One of the strategies had to have been thought up from scratch with no hints, and my implementation of that strategy was successful in consistently playing 15,000+ rounds against itself in a single game.</p>
+					<ul class="actions">
+						<li><a href="https://github.com/TJEEPOT/Java-Card-Game" class="button"><i class = "icon brands fab fa-github"></i> See the Code</a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="showall hide electronics">
+			<div class="content">
+				<div class="inner">
+					<h2>Analogue Electronic Communication System</h2>
+					<p>This was a pairs project where the brief required us to design and build two circuits to modulate and demodulate a signal so it can be transmitted through a metal bar. The modulator consisted of a breadboard containing a signal in (from a PC via a 3.5mm phone connector), a pre-amplifier, an oscillator (set to the resonant frequency of the metal bar) and a power amp leading to an output which connected it to the metal bar.
+					The demodulator was a printed circuit board which we designed in Autodesk EAGLE using a provided circuit diagram and had manufactured on site. We then needed to solder on the required components and make presentable by housing in a plastic container.
+					We had to demonstrate that the system we had built was suitable for purpose by showing the output from different stages on a digital oscilloscope as well as playing the transmitted audio from headphones connected to the demodulator output, as well as answer questions on the circuit design and operation.</p>
+					<ul class="actions">
+					</ul>
+				</div>
+			</div>
+		</section>
 		<section class="showall hide c dsa">
 			<div class="content">
 				<div class="inner">
