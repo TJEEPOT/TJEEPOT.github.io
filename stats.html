@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+	<title>Statistics Miniprojects - @TJEEPOT</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+
+	<!-- Header -->
+	<header id="header">
+		<a href="index.html" class="title">@TJEEPOT</a>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Main -->
+		<section id="main" class="wrapper">
+			<div class="inner">
+				<h1 class="major">Statistics Miniprojects</h1>
+				<span class="image fit"><img src="images/stats01.jpg" alt="Statistics header image" /></span>
+				<p>For my optional Statistics module, I was tasked with completing four mini projects to test my knowledge of statistics and what can be produced with the R programming language. Due to having no background in Statistics, little to no previous knowledge in the subject and no pointers to get started with even the basics, I felt like I was dropped in at the deep end on this one! I was told that prior knowledge was not required but then the first lecture hit us with Linear Regression and the <a href="https://en.wikipedia.org/wiki/Least_squares#Solving_the_least_squares_problem">Least Squares Problem</a> a few slides in. That was rough!</p>
+				<p>Despite needing to spend many, many hours doing my own research and building my knowledge from the ground up, I was quite happy with my final result and felt that I could attempt some simple statistical analysis.</p>
+				<p>The description of the required miniprojects can be found below, along with the work submitted. For each question on each project, the question asked is listed in the comments of the R code, or in the case of having a report, is also mentioned there.</p>
+				
+				<h2>Project 1 - Introduction to R</h2>
+				<p>I admit, I let this one slip. I was completing three other projects simultaneously to this which I prioritised higher, so I was left with only two days to do this out of the two weeks given. Even so, I thought this should be enough time to complete - I was told it should take three hours so I expected six... it actually took me fifteen hours plus a weekend to recuperate.</p>
+				<p>Nevertheless, I completed all the questions at least and received a mark of 48/100 - my lowest mark ever by a LARGE margin. I expected around a 60 but I'm sure if you have a statistical background you'll be able to tell this author didn't know what he's talking about just by browsing it. Ah well, I knew I had to do better on the next three and gave them the time I felt they needed.</p>
+				<ul class="actions">
+					<li><a href="projects/statistics-miniprojects/Miniproject_1.pdf" class="button"><i class = "icon solid fas fa-file-pdf"></i> Check out Miniproject 1</a></li>
+				</ul>
+
+				<h2>Project 2 - Linear Regression in R</h2>
+				<p>This project worked with a small dataset that listed the length of stays of a set of patients in a hospital along with independent variables that were possible factors in said length of stay. Firstly, it was my job to work out what factors were most likely to influence the length of stay.</p>
+				<p>To do this, I used Backward Elimination and Forward Selection methods to create two models then selected the one I felt fitted best and explained why. I then transformed the dependent variable using a non-linear transformation on the predictor and create the models again, with explanation and reporting any outliers. I then check the interaction terms between two variables to see if that contributes to the chosen model. I then gave the predicted regression models in regards to affiliation to the university (aff variable) then interpreted the regression coefficients and R-squared.</p>
+				<p>For this project I ended up getting 73/100. Better than I expected again but I felt there was some more improvement to be made.</p>
+				<ul class="actions">
+					<li><a href="projects/statistics-miniprojects/Miniproject_2.pdf" class="button"><i class = "icon solid fas fa-file-pdf"></i> Check out Miniproject 2</a></li>
+				</ul>
+
+				<h2>Project 3 - One Way ANOVAs with R</h2>
+				<p>This project required me to work with a dataset from an experiment with fertilizers to determine what one was the most effective. It compared a standard product (x1) with the experimental products x2-x5 to see which resulted in the greatest yield in tons per hectare.</p>
+				<p>The first part was to load the data into R and produce a graphic comparing the yields of each fertilizer, of which I chose a boxplot, then I described what I could observe. I then implemented a one way ANOVA to determine the significant effects and described what I saw. I then stated the assumptions made with the ANOVA and investigated if they were satisfied. I did a comparison of each experimental fertilizer against the standard product, writing what I observed and what the figures could mean. I implemented Holm and Bonferonni corrections to the p-values and explained what those corrections did to the conclusions. Finally, I wrote what my recommendation would be based off of the data colleted and what profit would be expected if the wheat was sold at £120 per ton.</p>
+				<p>The grade of this project met my expectations and I received a mark of 75/100. Not bad for someone that didn't understand a word of the lectures!
+				</p>
+				<ul class="actions">
+					<li><a href="projects/statistics-miniprojects/Miniproject_3.pdf" class="button"><i class = "icon solid fas fa-file-pdf"></i> Check out Miniproject 3</a></li>
+				</ul>
+				
+				<h2>Project 4 - Two Way ANOVAs, ANCOVAs and Survival Analysis</h2>
+				<p>This project required me to work with two sets of data and a theoretical analysis of the lifetime of a bulb.</p>
+				<p>Part one worked with a dataset of cocoa plants, where I compared the measured yield of the plants against their genotype and height, in order to find if there was a comparison to be made. This was done by visualising the data, then running a two way ANOVA with heightgroup and genotype of the plants as factors. I then ran an ANCOVA with genotype as a factor and Height as a covariate and interpreted what I found. Finally, I made a commend on if Height was a good covariate for the ANCOVA and described whether ANOVA or ANCOVA was the better approach.</p>
+				<p>Part two was regarding a theoretical bulb with a given hazard function. I had to determine, from the hazard function, the survival function and failure probability function for this bulb. I then determined its median lifetime and finally, what the probability would be of the bulb lasting longer than two months. I found this part to be extremely difficult and to be honest, I didn't really complete it fully as the calculations didn't make much sense to me. I managed to get a decent way through it though and pushed on.</p>
+				<p>The final part was using a data set of the survival rate of cancer patients. I first had to break the survival data into six groups of four weeks each and construct Life Tables and estimated survival plots for the data. I then used Kaplan Meier estimation to construct survival plots using the data and described which method was better. Finally, I did a log-rank test to show the significance of differences between the two treatments and interpreted the results.</p>
+				<p>This project was made even more difficult due to the impact of COVID-19 lockdown happening shortly before it was due to be set, therefore I ended up relying on reduced information from lecture slides posted online rather than two interactive lectures. Once again I really had no idea when starting the project how to complete the tasks required; I estimate this project took around 40 hours to complete as I had to research everything asked of me then complete further reading into those and other related concepts to really understand what I needed to write. Despite this, or perhaps due to it, I received a score of 86/100 for this project, far beyond what I expected!</p>
+				<p>In total, I managed to just pass this module in first class with a score of 70.5/100, which was a great surprise. It would be interesting to put this knowledge to the test in some real projects but I think there are people out there far more capable than myself at that work, I might just leave it to them.</p>
+				<ul class="actions">
+					<li><a href="projects/statistics-miniprojects/Miniproject_4.pdf" class="button"><i class = "icon solid fas fa-file-pdf"></i> Check out Miniproject 4</a></li>
+				</ul>
+			</div>
+		</section>
+	</div>
+
+	<!-- Footer -->
+	<footer id="footer" class="wrapper alt">
+		<div class="inner">
+			<ul class="menu">
+				<li>&copy;2020 Martin Siddons. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+</html>

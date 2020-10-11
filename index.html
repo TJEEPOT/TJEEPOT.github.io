@@ -48,7 +48,7 @@
 
 	<!-- Projects (spotlights) 
 	Toggle code from https://stackoverflow.com/questions/6164507/change-the-content-of-a-div-based-on-selection-from-dropdown-menu/24849350 -->
-	<div class="subject-select">
+	<div id="one" class="subject-select">
 		<label for="subject">Select a subject:</label>
 		<select name="subject" class="project-toggle" data-target=".spotlights">
 			<option value="All" data-show=".showall">Show All</option>
@@ -62,10 +62,11 @@
 			<option value="Java" data-show=".java">Java</option>
 			<option value="Prototyping" data-show=".proto">Prototyping</option>
 			<option value="Python" data-show=".py">Python</option>
+			<option value="Python" data-show=".r">R / Statistics</option>
 			<option value="SDLC" data-show=".sdlc">Systems Development / Modelling</option>
 		</select>
 	</div>
-	<section id="one" class="wrapper style2 spotlights">
+	<section class="wrapper style2 spotlights">
 		<!--
 		<section class="showall hide">
 			<div class="content">
@@ -83,6 +84,16 @@
 			</div>
 		</section>
 		-->
+		<section class="showall hide r">
+			<div class="content">
+				<div class="inner">
+					<h2>Applied Statistics Miniprojects</h2>
+					<p>A collection of four small projects given to test my understanding of statistics and how I can use the R programming language to implement statistical methods. Information on these projects can be found on the subpage linked below.</p>
+					<ul class="actions">
+						<li><a href="" class="button"><i class = "icon solid fas fa-file-pdf"></i> See the Project</a></li>
+				</div>
+			</div>
+		</section>
 		<section class="showall hide java sdlc db">
 			<div class="content">
 				<div class="inner">
