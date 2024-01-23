@@ -331,36 +331,6 @@ input, select, textarea {
 		text-align: right;
 	}
 
-/* Name */
-.prename{
-	display: inline-block;
-	position: sticky;
-	padding: 0px;
-	margin: 5px 0px 10px;
-	border: 1px solid #FFF;
-	top: 0px;
-	left: 5.35em;
-	color: #ffffff25;
-}
-
-.name{
-	display: block;
-	position: relative;
-	padding: 0px;
-	margin: 0px;
-	border: 1px solid #FFF;	
-}
-
-.postname{
-	display: inline-block;
-	position: sticky;
-	padding: 0px;
-	margin: 5px 0px 10px;
-	border: 1px solid #FFF;
-	top: 0px;
-	left: 5.35em;
-}
-
 /* Row */
 
 	.row {
@@ -3944,32 +3914,24 @@ input, select, textarea {
 
 /* Name */
 .prename{
-	display: block;
-	float: top;
+	display: inline-block;
+	position: sticky;
 	text-align: right;
-	padding: 0px;
 	margin: 0px;
 	color: #ffffff13;
-	border: 0px;
 }
 
 .name{
 	display: block;
 	position: relative;
 	text-align: right;
-	padding: 0px;
-	margin: 0px;
 	width: 32em;
-	border: 0px;
 }
 
 .postname{
-	display: block;
-	float: bottom;
-	text-align: right;
-	padding: 0px;
-	margin: 0px;
-	border: 0px;
+	display: inline-block;
+	position: sticky;
+	text-align: right;	
 }
 
 @media screen and (max-width: 736px){
@@ -3986,7 +3948,9 @@ input, select, textarea {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	margin: 0.75em;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	margin: 1em;
 }
 
 .subject-select > label{
@@ -3996,6 +3960,7 @@ input, select, textarea {
 
 .project-toggle{
 	align-self: center;
+	width:30em;
 }
 section.hide {
 	display: none;

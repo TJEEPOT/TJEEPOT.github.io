@@ -51,40 +51,175 @@
 	<div id="one" class="subject-select">
 		<label for="subject">Select a subject:</label>
 		<select name="subject" class="project-toggle" data-target=".spotlights">
-			<option value="All" data-show=".showall">Show All</option>
-			<option value="ASM" data-show=".asm">Assembly / Machine Code</option>
-			<option value="C" data-show=".c">C</option>
-			<option value="C++" data-show=".cpp">C++</option>
-			<option value="DB" data-show=".db">Databases</option>
-			<option value="DSA" data-show=".dsa">Data Structures and Algorithms</option>
-			<option value="Electronics" data-show=".electronics">Electronics / FPGAs</option>
-			<option value="HTML" data-show=".html">HTML / CSS</option>
-			<option value="Java" data-show=".java">Java</option>
-			<option value="Prototyping" data-show=".proto">Prototyping</option>
-			<option value="Python" data-show=".py">Python</option>
-			<option value="Python" data-show=".r">R / Statistics</option>
-			<option value="SDLC" data-show=".sdlc">Systems Development / Modelling</option>
+			<option data-show=".showall">SHOW ALL</option>
+			<option data-show=".aca">ACADEMIC PROJECTS</option>
+			<option data-show=".personal">PERSONAL PROJECTS</option>
+			<option data-show=".showall"></option>
+			<option data-show=".api">API Usage</option>
+			<option data-show=".ai">Artificial Intelligence / ML</option>
+			<option data-show=".asm">Assembly / Machine Code</option>
+			<option data-show=".c">C</option>
+			<option data-show=".cpp">C++</option>
+			<option data-show=".cyber">Cybersecurity</option>
+			<option data-show=".db">Databases</option>
+			<option data-show=".dsa">Data Structures and Algorithms</option>
+			<option data-show=".electronics">Electronics / FPGAs</option>
+			<option data-show=".html">HTML / CSS / Web</option>
+			<option data-show=".java">Java</option>
+			<option data-show=".proto">Prototyping</option>
+			<option data-show=".py">Python</option>
+			<option data-show=".r">R / Statistics</option>
+			<option data-show=".sdlc">Systems Development / Modelling</option>
+			
 		</select>
 	</div>
 	<section class="wrapper style2 spotlights">
 		<!--
-		<section class="showall hide">
+		<section class="showall hide personal">
 			<div class="content">
 				<div class="inner">
 					<h2></h2>
 					<p></p>
 					<ul class="actions">
 						<li><a href="" class="button"><i class = "icon brands fab fa-github"></i> See the Code</a></li>
-
 						<li><a href="" class="button"><i class = "icon solid fas fa-file-pdf"></i> See the Project</a></li>
-
 						<li><a href="" class="button"><i class = "icon solid fas fa-server"></i> See it Live</a></li>
 					</ul>
 				</div>
 			</div>
 		</section>
 		-->
-		<section class="showall hide r">
+		<section class="showall hide personal py ai">
+			<div class="content">
+				<div class="inner">
+					<h2>Guild Wars Tooltip Reader</h2>
+					<p>This project takes details from a hovered-over item within the MMORPG Guild Wars (2005) and returns information on that item. It uses the pyautogui library to take a screenshot and perform edge detection to crop down the item tooltip image, then uses Tesserect to perform OCR on the image to find the text. Finally, it looks up the item on the game's wiki and retrieves relevant information for the user.</p>
+					<ul class="actions">
+						<li><a href="https://github.com/TJEEPOT/Guild-Wars-Tooltip-Reader" class="button"><i class = "icon brands fab fa-github"></i> See the Code</a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="showall hide personal py db">
+			<div class="content">
+				<div class="inner">
+					<h2>GW2 Crafting Database</h2>
+					<p>A collection of scripts which are designed to help players of the MMORPG Guild Wars 2 (2012) to find useful items for crafting that are not covered by existing fan sites. The project is slowly evolving over time to incorporate a web-based GUI for ease of use, as well as further scripts to allow for more complex use cases.</p>
+					<ul class="actions">
+						<li><a href="https://github.com/TJEEPOT/GW2-Crafting-Database" class="button"><i class = "icon brands fab fa-github"></i> See the Code</a></li>
+						<li><a href="http://tjeepot.com/gw2" class="button"><i class = "icon solid fas fa-server"></i> See it Live</a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="showall hide aca ai java">
+			<div class="content">
+				<div class="inner">
+					<h2>Third Year Capstone Project - Contributing J48SS to TSML</h2>
+					<p>This was the largest project that I completed during my time at university. As a solo project that I completed in assistance to the postgraduate Time Series Machine Learning (TSML) team, I decided to implement the <a href="https://www.researchgate.net/publication/331532370_J48SS_A_Novel_Decision_Tree_Approach_for_the_Handling_of_Sequential_and_Time_Series_Data">J48SS</a> machine learning algorithm in Java and integrate it into the <a href="https://github.com/time-series-machine-learning/tsml-java">TSML Toolkit</a> for the TSML team to use when evaluating larger Machine Learning implementations.</p>
+					<ul class="actions">
+						<li><a href="https://github.com/TJEEPOT/J48SS-Implementation-for-TSML" class="button"><i class = "icon brands fab fa-github"></i> See the Code</a></li>
+						<li><a href="projects/capstone-project/Capstone_Project_Report.pdf" class="button"><i class = "icon solid fas fa-file-pdf"></i> See the Portfolio</a></li>
+						<li><a href="projects/capstone-project/Capstone_Project_Poster.pdf" class="button"><i class = "icon solid fas fa-file-pdf"></i> See the Poster</a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="showall hide aca ai java">
+			<div class="content">
+				<div class="inner">
+					<h2>Machine Learning: Classification with Decision Trees</h2>
+					<p>This project required implementing variants of the ID3CW Decision Tree classifier in order to create prediction models for given datasets, then compare the results from different classifier variants to find the best classifier for a given dataset. The code produced was designed to fit into an existing framework, therefore a sample of the code is not available as it is not runnable. However, the report written from the classifiers I wrote is available below. </p>
+					<ul class="actions">
+						<li><a href="projects/Classification_with_Decision_Trees.pdf" class="button"><i class = "icon solid fas fa-file-pdf"></i> See the Report</a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="showall hide aca html cyber py">
+			<div class="content">
+				<div class="inner">
+					<h2>Developing a Secure Web Application</h2>
+					<p>This was a group project which required my group to design and build a website with login that was secure against the current top web vulnerabilities (blue-teaming), demonstrate the site to a panel then attack a target site another group created (red-teaming). I created the basic version of our site as a framework to build off of, then concentrated on ensuring the site was secure against Account Enumeration and SQL Injection. See below for the code for the site we created, a video presenting the working site and the reports we produced regarding testing our site and attacking the given target.</p>
+					<ul class="actions">
+						<li><a href="https://github.com/TJEEPOT/Secure-Web-Development" class="button"><i class = "icon brands fab fa-github"></i> See the Code</a></li>
+						<li><a href="https://youtu.be/_fQyxFGbn_4" class="button"><i class = "icon brands fab fa-video"></i> See the Presentation</a></li>
+						<li><a href="projects/Secure_Web_App_Development.pdf" class="button"><i class = "icon solid fas fa-file-pdf"></i> See the Dev Report</a></li>
+						<li><a href="projects/Secure_Web_App_Attack.pdf" class="button"><i class = "icon solid fas fa-file-pdf"></i> See the Attack Report</a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="showall hide aca cyber html dsa">
+			<div class="content">
+				<div class="inner">
+					<h2>Web Threats and Vulnerabilities Research</h2>
+					<p>This project required me to research some of the current top web vulnerabilities and identify ways to mitigate them, reporting my findings in a brief 10-page report using APA referencing. I chose to write about Account Enumeration, Session Hijacking, SQL Injection, XSS, CSRF, Unvalidated Redirects, and authentication methods such as Username/Password, Swipe Pattern and OAuth. I also wrote pseudocode examples of how these attacks can be performed. The report I created can be found below.</p>
+					<ul class="actions">
+						<li><a href="projects/Web_Threats_and_Vulnerabilities.pdf" class="button"><i class = "icon solid fas fa-file-pdf"></i> See the Report</a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="showall hide personal py ai">
+			<div class="content">
+				<div class="inner">
+					<h2>Genshin Pillar Solver</h2>
+					<p>This is a personal project I created in an evening using skills I gained from my AI class. It can take a binary representation of a certain type of puzzle in the game Genshin Impact and work out the fewest number of moves needed to complete the puzzle, as well as which pillars to activate and how to move around the game world to complete the puzzle. It has the ability to scale to puzzles of any size, in case future puzzles contain more pillars.</p>
+					<ul class="actions">
+						<li><a href="https://github.com/TJEEPOT/Genshin-Pillar-Solver" class="button"><i class = "icon brands fab fa-github"></i> See the Code</a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="showall hide aca ai py html api sdlc">
+			<div class="content">
+				<div class="inner">
+					<h2>Developing an Intelligent Conversational System</h2>
+					<p>This was a group project to develop an AI chatbot for a train company to assist users in buying tickets, as well as a system to predict train delays based on past train performance. My responsibility was for creating the delay prediction system and hooking it into the chatbot that the other two members of the group built. This involved pulling several years of arrival and departure data from the National Rail API, filtering out misleading and useless data from the set, building a graph data structure to simulate the rail network, use the data to build multiple versions of different AI models (KNN, BRR, ANN) and test each model and iteration against the rest to find the best fit for our data. Our group relied on Rapid Application Development methodology to ensure we could develop and test each part of the system separately before bringing everything together.</p>
+					<ul class="actions">
+						<li><a href="https://github.com/TJEEPOT/AI-Chat-Bot" class="button"><i class = "icon brands fab fa-github"></i> See the Code</a></li>
+						<li><a href="projects/AI_Chatbot_Report.pdf" class="button"><i class = "icon solid fas fa-file-pdf"></i> See the Project</a></li>
+						<li><a href="https://youtu.be/a5CYEAKxVO0" class="button"><i class = "icon solid fas fa-video"></i> See the Demonstration</a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="showall hide aca ai py">
+			<div class="content">
+				<div class="inner">
+					<h2>Artificial Intelligence: Solving the 8-Tile Problem</h2>
+					<p>This project required me to implement the <a href="https://en.wikipedia.org/wiki/Iterative_deepening_depth-first_search">DFID</a> and <a href="https://en.wikipedia.org/wiki/Iterative_deepening_A*">IDA*</a> algorithms in Python to solve a classic AI search problem. The program took a state representation of an eight-tile puzzle and output a list of moves the user could make in order to solve the puzzle. The code for this project can be found below.</p>
+					<ul class="actions">
+						<li><a href="https://github.com/TJEEPOT/8-Tile-Solution" class="button"><i class = "icon brands fab fa-github"></i> See the Code</a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="showall hide aca cyber">
+			<div class="content">
+				<div class="inner">
+					<h2>Cybersecurity Incident Analysis</h2>
+					<p>This project required me to analyse and evaluate three cybersecurity events and produce a report discussing those events and how they impacted the companies involved. The events were the Yahoo! data breaches of 2013/14, the Stuxnet virus found in 2010 and the Norsk Hydro hack of 2019. Both the research notes for this project as well as my final report can be found below.</p>
+					<ul class="actions">
+						<li><a href="projects/Cyber_Incident_Analysis.pdf" class="button"><i class = "icon solid fas fa-file-pdf"></i> See the Report</a></li>
+						<li><a href="projects/Cyber_Incident_Notes.pdf" class="button"><i class = "icon solid fas fa-file-pdf"></i> See the Research</a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="showall hide aca cyber">
+			<div class="content">
+				<div class="inner">
+					<h2>Research the Sony Pictures Hack of 2014</h2>
+					<p>This was a group project to produce a video outlying research conducted on the Sony Pictures hack. My group's research covered the underlying cause of the incident, the impact it had on Sony and its partners, how Sony responded to the incident, the risk that attack could happen again and information around the security policy in place at Sony Pictures at the time of the attack. I was personally responsible for researching the cause of the hack, as well as putting together the visuals for the video. A copy of our video can be found below.</p>
+					<ul class="actions">
+						<li><a href="https://youtu.be/mWwhVE_vGOA" class="button"><i class = "icon solid fas fa-video"></i> See the Presentation</a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="showall hide aca r">
 			<div class="content">
 				<div class="inner">
 					<h2>Applied Statistics Miniprojects</h2>
@@ -94,7 +229,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="showall hide java sdlc db">
+		<section class="showall hide aca java sdlc db">
 			<div class="content">
 				<div class="inner">
 					<h2>EBS - Event Booking System</h2>
@@ -107,7 +242,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="showall hide cpp">
+		<section class="showall hide aca cpp">
 			<div class="content">
 				<div class="inner">
 					<h2>C++ Offline Movie Database</h2>
@@ -117,7 +252,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="showall hide dsa java">
+		<section class="showall hide aca dsa java">
 			<div class="content">
 				<div class="inner">
 					<h2>Word Auto Completion with Tries</h2>
@@ -130,7 +265,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="showall hide java">
+		<section class="showall hide aca java">
 			<div class="content">
 				<div class="inner">
 					<h2>Java Card Game</h2>
@@ -141,19 +276,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="showall hide electronics">
-			<div class="content">
-				<div class="inner">
-					<h2>Analogue Electronic Communication System</h2>
-					<p>This was a pairs project where the brief required us to design and build two circuits to modulate and demodulate a signal so it can be transmitted through a metal bar. The modulator consisted of a breadboard containing a signal in (from a PC via a 3.5mm phone connector), a pre-amplifier, an oscillator (set to the resonant frequency of the metal bar) and a power amp leading to an output which connected it to the metal bar.
-					The demodulator was a printed circuit board which we designed in Autodesk EAGLE using a provided circuit diagram and had manufactured on site. We then needed to solder on the required components and make presentable by housing in a plastic container.
-					We had to demonstrate that the system we had built was suitable for purpose by showing the output from different stages on a digital oscilloscope as well as playing the transmitted audio from headphones connected to the demodulator output, as well as answer questions on the circuit design and operation.</p>
-					<ul class="actions">
-					</ul>
-				</div>
-			</div>
-		</section>
-		<section class="showall hide c dsa">
+		<section class="showall hide aca c dsa">
 			<div class="content">
 				<div class="inner">
 					<h2>Thread-Safe Memory Manager in C</h2>
@@ -164,7 +287,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="showall hide asm c">
+		<section class="showall hide aca asm c">
 			<div class="content">
 				<div class="inner">
 					<h2>ARM Assembly Programming</h2>
@@ -176,7 +299,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="showall hide c">
+		<section class="showall hide aca c">
 			<div class="content">
 				<div class="inner">
 					<h2>C Offline Movie Database</h2>
@@ -187,7 +310,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="showall hide dsa java">
+		<section class="showall hide aca dsa java">
 			<div class="content">
 				<div class="inner">
 					<h2>Data Structures and Algorithms - Feature Vector Calculator</h2>
@@ -198,7 +321,19 @@
 				</div>
 			</div>
 		</section>
-		<section class="showall hide electronics">
+		<section class="showall hide aca electronics">
+			<div class="content">
+				<div class="inner">
+					<h2>Analogue Electronic Communication System</h2>
+					<p>This was a pairs project where the brief required us to design and build two circuits to modulate and demodulate a signal so it can be transmitted through a metal bar. The modulator consisted of a breadboard containing a signal in (from a PC via a 3.5mm phone connector), a pre-amplifier, an oscillator (set to the resonant frequency of the metal bar) and a power amp leading to an output which connected it to the metal bar.
+					The demodulator was a printed circuit board which we designed in Autodesk EAGLE using a provided circuit diagram and had manufactured on site. We then needed to solder on the required components and make presentable by housing in a plastic container.
+					We had to demonstrate that the system we had built was suitable for purpose by showing the output from different stages on a digital oscilloscope as well as playing the transmitted audio from headphones connected to the demodulator output, while answering questions on the circuit design and operation.</p>
+					<ul class="actions">
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="showall hide aca electronics">
 			<div class="content">
 				<div class="inner">
 					<h2>Digital Electronic Traffic Light System</h2>
@@ -211,7 +346,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="showall hide db html py">
+		<section class="showall hide aca db html py">
 			<div class="content">
 				<div class="inner">
 					<h2>Bookshop Database System</h2>
@@ -223,7 +358,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="showall hide java sdlc">
+		<section class="showall hide aca java sdlc">
 			<div class="content">
 				<div class="inner">
 					<h2>Java Toll Road Simulator</h2>
@@ -235,7 +370,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="showall hide sdlc proto">
+		<section class="showall hide aca sdlc proto">
 			<div class="content">
 				<div class="inner">
 					<h2>IoT System Development</h2>
@@ -247,7 +382,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="showall hide java">
+		<section class="showall hide aca java">
 			<div class="content">
 				<div class="inner">
 					<h2>Java Offline Movie Database</h2>
@@ -259,7 +394,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="showall hide py html">
+		<section class="showall hide aca py html">
 			<div class="content">
 				<div class="inner">
 					<h2>Web Design with Python</h2>
@@ -271,7 +406,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="showall hide ">
+		<section class="showall hide aca proto">
 			<div class="content">
 				<div class="inner">
 					<h2>Lo-Fi Prototyping Exercise and Presentation</h2>
@@ -283,7 +418,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="showall hide asm">
+		<section class="showall hide aca asm">
 			<div class="content">
 				<div class="inner">
 					<h2>Machine Code Programming</h2>
@@ -296,7 +431,7 @@
 			</div>
 		</section>
 
-		<section class="showall hide db html">
+		<section class="showall hide aca db html">
 			<div class="content">
 				<div class="inner">
 					<h2>Database Design</h2>
@@ -309,7 +444,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="showall hide sdlc">
+		<section class="showall hide aca sdlc">
 			<div class="content">
 				<div class="inner">
 					<h2>Modelling of Business Systems</h2>
@@ -321,7 +456,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="showall hide cpp">
+		<section class="showall hide aca cpp">
 			<div class="content">
 				<div class="inner">
 					<h2>Individual C++ Exercise</h2>
@@ -333,7 +468,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="showall hide html">
+		<section class="showall hide aca html">
 			<div class="content">
 				<div class="inner">
 					<h2>Website Design</h2>
@@ -352,12 +487,17 @@
 	<section id="two" class="wrapper style3 fade-up">
 		<div class="inner">
 			<h2>Who I am</h2>
-			<p>I'm currently a third year Computer Science student at the University of East Anglia in Norwich, UK, graduating in 2021. After some years of working in the Housing sector and many years being interested in all things tech, I decided to leave my former career in 2017 to study full-time for a Bachelor's Degree in Computer Science with a focus from the start on AI and Machine Learning. I have had a wide range of interests within Computer Science as detailed below.<p>
+			<p>I'm a graduate (First Class, Hons.) in Computer Science from the University of East Anglia in Norwich, UK. After some years of working in the Housing sector and many years being interested in all things tech, I decided to leave my former career in 2017 to study full-time for a Bachelor's Degree in with a focus from the start on AI and Machine Learning. I have had a wide range of interests within Computer Science as detailed below.<p>
 			<div class="features">
 				<section>
 					<span class="icon major solid brands fa-java"></span>
 					<h3>Java Programming</h3>
-					<p>Java is my go-to language for personal projects, I'm even using it for my capstone project in my third year for creating tools for a Machine Learning toolkit. I like to keep up-to-date with the latest happenings with Java through Reddit communities and through conference videos on YouTube.</p>
+					<p>Java is the core language I've used at university, which I used for my capstone project in my third year for creating tools for a Machine Learning toolkit. I like to keep up-to-date with the latest happenings with Java through Reddit communities and through conference videos on YouTube.</p>
+				</section>
+				<section>
+					<span class="icon major solid brands fa-python"></span>
+					<h3>Python Programming</h3>
+					<p>Python is my go-to language for scripts and small projects where performance is not necessary, as it is easy to write and modify code.</p>
 				</section>
 				<section>
 					<span class="icon major solid fa-lock"></span>
@@ -367,12 +507,12 @@
 				<section>
 					<span class="icon major solid fa-brain"></span>
 					<h3>Machine Learning and Artificial Intelligence</h3>
-					<p>I had been interested in the impact smaller projects in ML were making to computing back before I left my former career, so after researching it in more detail, I decided that would be the field I would prioritise going forward. I am also taking two modules in this in my third year.</p>
+					<p>I had been interested in the impact smaller projects in ML were making to computing back before I left my former career, so after researching it in more detail, I decided that would be the field I would prioritise at university, taking two modules in the field in my third year.</p>
 				</section>
 				<section>
 					<span class="icon major solid fa-code"></span>
 					<h3>C++ Programming</h3>
-					<p>I've so far completed a couple small projects in C++ in order to understand how it differs from Java and to get a solid understanding of the use of pointers, however I'm moving away from using C++ to focus more learning on Rust, due to the latter's inherent security benefits.</p>
+					<p>I've so far completed a couple small projects in C++ in order to understand how it differs from Java and to get a solid understanding of the use of pointers, however I am interested in using the language more, especially for projects that require performance or low-level code, such as for microcontrollers.</p>
 				</section>
 				<section>
 					<span class="icon major solid brands fa-html5"></span>
@@ -406,7 +546,7 @@
 					<ul class="contact">
 						<li>
 							<h3>Address</h3>
-							<span>Norwich, Norfolk<br />
+							<span>Grays, Essex<br />
 							United Kingdom<br />
 							</span>
 						</li>
@@ -420,7 +560,7 @@
 								<li><a href="https://github.com/TJEEPOT" class="icon major brands fa-github"><span class="label">GitHub</span></a></li>
 								<li><a href="https://www.linkedin.com/in/msiddons/" class="icon major brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 								<li><a href="https://www.hackerrank.com/TJEEPOT?hr_r=1" class="icon major brands fa-hackerrank"><span class="label">HackerRank</span></a></li>
-								<li><a href="https://dev.to/tjeepot" class="icon major brands fa-dev"><span class="label">DEV.to</span></a></li>
+								<!-- <li><a href="https://dev.to/tjeepot" class="icon major brands fa-dev"><span class="label">DEV.to</span></a></li> -->
 							</ul>
 						</li>
 					</ul>
@@ -434,7 +574,7 @@
 <footer id="footer" class="wrapper style1-alt">
 	<div class="inner">
 		<ul class="menu">
-			<li>&copy;2020 Martin Siddons. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			<li>&copy;2023 Martin Siddons. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 		</ul>
 	</div>
 </footer>
